@@ -1,0 +1,13 @@
+/**/target/
+/**/.settings/
+
+.DS_Store
+.metadata/
+
+# Eclipse project
+/**/.classpath
+/**/.project
+/.metadata/
+
+# untrack the property file 
+*.properties

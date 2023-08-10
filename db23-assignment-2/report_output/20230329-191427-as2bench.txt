@@ -1,0 +1,5 @@
+# of txns (including aborted) during benchmark period: 0
+
+UPDATE_ITEM_PRICE - committed: 0, aborted: 0, avg latency: 0 ms
+READ_ITEM - committed: 0, aborted: 0, avg latency: 0 ms
+TOTAL - committed: 0, aborted: 0, avg latency: 0 ms

@@ -1,0 +1,6 @@
+time(sec), throughput(txs), avg_latency(ms), min(ms), max(ms), 25th_lat(ms), median_lat(ms), 75th_lat(ms)
+UPDATE_ITEM_PRICE: ABORTED
+UPDATE_ITEM_PRICE: ABORTED
+UPDATE_ITEM_PRICE: ABORTED
+5,232086,0,0,80,0,0,0
+10,785,0,0,19,0,0,0

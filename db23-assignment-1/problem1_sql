@@ -1,0 +1,39 @@
+CREATE TABLE professor(
+    professor_id INTEGER,
+    name VARCHAR(20),
+    rank INTEGER,
+    PRIMARY KEY (professor_id)
+);
+
+CREATE TABLE project(
+    project_number INTEGER,
+    sponsor_name VARCHAR(20),
+    starting_date Date,
+    ending_date Date,
+    budget INTEGER,
+    professor_id INTEGER,
+    FOREIGN KEY (professor_id) REFERENCES professor,
+    PRIMARY KEY (project_number)
+);
+
+CREATE TABLE student(
+    student_id INTEGER,
+    project_number INTEGER,
+    degree_program VARCHAR(20),
+    professor_id INTEGER,
+    FOREIGN KEY (professor_id) REFERENCES professor,
+    PRIMARY KEY (student_id)
+);
+
+
+--A student is able to participate in a project
+CREATE TABLE participate(
+    student_id INTEGER,
+    project_number INTEGER,
+    start TIMESTAMP,
+    stop TIMESTAMP,
+    pay INTEGER,
+    PRIMARY KEY (student_id, project_number),
+    FOREIGN KEY (student_id) REFERENCES student,
+    FOREIGN KEY (project_number) REFERENCES project
+);
